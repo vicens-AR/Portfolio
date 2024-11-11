@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #f8f9fa; /* Color de fondo de la navbar */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.menu a {
+    margin: 0 15px; /* Espacio entre los íconos */
+}
+
+.menu img {
+    width: 30px; /* Tamaño de los íconos */
+    height: 30px;
+    transition: transform 0.3s; /* Transición para efecto hover */
+}
+
+.menu img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
