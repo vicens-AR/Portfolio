@@ -31,7 +31,7 @@ def login():
         if user:
             login_user(user)
             flash('Inicio de sesión exitoso', 'success')
-            return redirect(url_for('modo_edicion'))
+            return redirect(url_for('modo_edicion.html'))
         else:
             flash('Usuario o contraseña incorrectos', 'danger')
     return render_template('login.html')
