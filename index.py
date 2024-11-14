@@ -45,7 +45,7 @@ def signup():
         password = request.form['password']
         
         # Encriptar la contraseña
-        hashed_password = generate_password_hash(password, method='sha256')
+        hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         
         # Crear nuevo usuario
         new_user = User(username=username, password=hashed_password)

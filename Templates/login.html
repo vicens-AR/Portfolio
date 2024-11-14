@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../static/CSS/login.css">
 </head>
 <body>
-    <h2>Inicio de sesión</h2>
-    <form action="{{ url_for('login') }}" method="POST">
-        <label for="username">Usuario:</label>
-        <input type="text" name="username" required><br>
-        <label for="password">Contraseña:</label>
-        <input type="password" name="password" required><br>
-        <button type="submit">Iniciar sesión</button>
-    </form>
+    <div class="login-card">
+        <h2>Inicio de sesión</h2>
+        <form action="{{ url_for('login') }}" method="POST">
+            <div class="input-container">
+                <span class="icon">&#128100;</span> <!-- Ícono de persona -->
+                <input type="text" name="username" placeholder="Usuario" required>
+            </div>
+            <div class="input-container">
+                <span class="icon">&#128274;</span> <!-- Ícono de candado -->
+                <input type="password" name="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="login-button">Iniciar sesión</button>
+        </form>
+        
+        <p class="signup-text">¿No tienes cuenta? <a href="{{ url_for('signup') }}">Regístrate aquí</a></p>
 
-    <!-- Botón de Sign Up -->
-    <p>¿No tienes cuenta? <a href="{{ url_for('signup') }}">Regístrate aquí</a></p>
-
-    {% with messages = get_flashed_messages(with_categories=true) %}
-      {% if messages %}
-        <ul>
-          {% for category, message in messages %}
-            <li class="{{ category }}">{{ message }}</li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endwith %}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="messages">
+              {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+    </div>
 </body>
 </html>
