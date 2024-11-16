@@ -1,3 +1,13 @@
+body {
+    background-image: url('../Banner.png');
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Asegúrate de que la imagen cubra toda la pantalla */
+    background-attachment: fixed; /* Hace que la imagen sea estática */
+    background-position: center; /* Centra la imagen */
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     background-color: #f8f9fa; /* Color de fondo de la navbar */
     padding: 10px;
@@ -26,7 +36,8 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background-color: #f0f0f0;
+    background-color: rgba(255, 0, 0, 0.655);
+    padding: 0;
 }
 
 .profile {
@@ -79,13 +90,14 @@
     font-optical-sizing: auto;
     font-size: 18px;
     font-style: bold;
+    color: #f4f4f4;
 }
 
 .download-btn {
     text-decoration: none;
     color: white;
     background-color: red;
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -104,18 +116,23 @@
     background-color: white;
     color: red;
 }
+.github-logo {
+    width: 12px; /* Ajusta el tamaño del logo */
+    height: 12px;
+}
+
+
 /*sobre mi css*/
 .about-section {
     width: 100%;
     padding: 40px 20px;
-    background-color: #f4f4f4;
     text-align: center;
 }
 
 .about-section h2 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: #ffffff;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-size: 40px;
@@ -124,7 +141,7 @@
 
 .about-section p {
     line-height: 1.6;
-    color: #555;
+    color: #ffffff;
     max-width: 800px;
     margin: 0 auto;
     font-family: "Varela Round", sans-serif;
@@ -142,7 +159,7 @@
 
 .skills h2 {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -190,3 +207,76 @@
 .card:hover {
     transform: scale(1.05);
 }
+
+/*proyectos*/
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 40px;
+    font-style: bold;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #444;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: #666;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #24292e;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.github-btn:hover {
+    background-color: #444;
+}
+
