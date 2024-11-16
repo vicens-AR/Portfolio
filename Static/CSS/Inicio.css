@@ -280,3 +280,41 @@ body {
     background-color: #444;
 }
 
+
+/*certificados*/
+
+.certificates {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.certificates h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.certificates-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.certificate-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
