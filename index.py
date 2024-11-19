@@ -17,6 +17,12 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(150), nullable=False)
 
+#POO
+class Skill:
+    def __init__(self, name, image_url):
+        self.name = name
+        self.image_url = image_url
+    
 # Cargar usuario
 @login_manager.user_loader
 def load_user(user_id):
@@ -79,7 +85,17 @@ def logout():
 # Página principal
 @app.route('/')
 def principal():
-    return render_template('Inicio.html')
+    skills_list = [
+        Skill(name="HTML", image_url="https://cdn-icons-png.flaticon.com/128/732/732212.png"),
+        Skill(name="CSS", image_url="https://cdn-icons-png.flaticon.com/128/732/732190.png"),
+        Skill(name="JavaScript", image_url="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"),
+        Skill(name="Python", image_url="https://cdn-icons-png.flaticon.com/128/1822/1822899.png"),
+        Skill(name="Visual Studio", image_url="https://cdn-icons-png.flaticon.com/128/5968/5968571.png"),
+        Skill(name="SQL", image_url="https://cdn-icons-png.flaticon.com/128/5968/5968254.png"),
+        Skill(name="GitHub", image_url="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"),
+        Skill(name="C++", image_url="https://cdn-icons-png.flaticon.com/128/6132/6132222.png"),
+    ]
+    return render_template('Inicio.html', skills=skills_list)
 
 if __name__ == '__main__':
     with app.app_context():

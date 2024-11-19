@@ -56,48 +56,22 @@
         <h2>Sobre Mí</h2>
         <p>Hola, soy Vicente Arhex Harwigt, tengo 17 años, actualmente soy estudiante de la orientacion
             programacion del Instituto tecnico Renault. Soy programador Full Stack, aunque tengo una
-            inclinacion hacia el Front-end. 
+            inclinacion hacia el Front-end. Soy muy apasianado y dispuesto con lo que hago, Disponible para trabajar.
         </p>
     </div>
 
     <!-- lenguajes -->
-     <section class="skills">
-    <h2>Lenguajes y Tecnologías</h2>
-    <div class="skills-cards">
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/732/732212.png"></img>
-            <p>HTML</p>
+    <section class="skills">
+        <h2>Lenguajes y Tecnologías</h2>
+        <div class="skills-cards">
+            {% for skill in skills %}
+            <div class="card">
+                <img src="{{ skill.image_url }}" alt="{{ skill.name }}">
+                <p>{{ skill.name }}</p>
+            </div>
+            {% endfor %}
         </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/732/732190.png"></img>
-            <p>CSS</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"></img>
-            <p>JavaScript</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/1822/1822899.png"></img>
-            <p>Python</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968571.png"></img>
-            <p>Visual Studio</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/5968/5968254.png"></img>
-            <p>SQL</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"></img>
-            <p>Git hub</p>
-        </div>
-        <div class="card">
-            <img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png"></img>
-            <p>C++</p>
-        </div>
-    </div>
-</section>
+    </section>
 
  <!-- mis proyectos -->
 <section class="projects">
@@ -152,16 +126,16 @@
     <h2>Certificados</h2>
     <div class="certificates-cards">
         <div class="certificate-card">
-            <img src="../Static/Certificados/Captura de pantalla 2024-11-16 154825.png" alt="Certificado 1">
+            <img src="../static/Certificados/Captura de pantalla 2024-11-16 154825.png" alt="Certificado 1">
         </div>
         <div class="certificate-card">
-            <img src="../Static/Certificados/Fotografia.png" alt="Certificado 2">
+            <img src="../static/Certificados/Fotografia.png" alt="Certificado 2">
         </div>
         <div class="certificate-card">
-            <img src="../Static/Certificados/Oniet.png" alt="Certificado 3">
+            <img src="../static/Certificados/Oniet.png" alt="Certificado 3">
         </div>
         <div class="certificate-card">
-            <img src="../Static/Certificados/Tech.png" alt="Certificado 4">
+            <img src="../static/Certificados/Tech.png" alt="Certificado 4">
         </div>
     </div>
 </section>
