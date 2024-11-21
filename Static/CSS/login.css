@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f9f0f0;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .login-card {
