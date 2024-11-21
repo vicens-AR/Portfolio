@@ -48,6 +48,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .profile-image {
@@ -69,11 +70,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: #ff0000;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .edit-profile-image input[type="file"] {
     margin-bottom: 10px;
     font-size: 14px;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .edit-profile-image button {
@@ -84,6 +90,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .edit-profile-image button:hover {

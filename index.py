@@ -44,7 +44,7 @@ def update_profile_image():
     if file and allowed_file(file.filename):
         filename = 'profile_image.jpg'  # O usa `secure_filename` para un nombre único
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        return redirect(url_for('principal'))
+        return redirect(url_for('login'))
     return "Invalid file type", 400
 
 # Cargar usuario
@@ -62,7 +62,7 @@ def login():
         if user and check_password_hash(user.password, password):
             login_user(user)
             flash('Inicio de sesión exitoso', 'success')
-            return redirect(url_for('modo_edicion'))
+            return redirect(url_for('principal'))
         else:
             flash('Usuario o contraseña incorrectos', 'danger')
     return render_template('login.html')
