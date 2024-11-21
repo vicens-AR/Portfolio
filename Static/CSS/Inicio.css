@@ -61,6 +61,35 @@ body {
     border-radius: 50%;
 }
 
+.edit-profile-image {
+    margin-top: 10px;
+}
+
+.edit-profile-image form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.edit-profile-image input[type="file"] {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.edit-profile-image button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-profile-image button:hover {
+    background-color: #b3002d;
+}
+
 .flag-icon {
     position: absolute;
     bottom: -5px;
