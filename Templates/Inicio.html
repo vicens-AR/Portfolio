@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!-- jinja2 para el head -->
+{% block extra_head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="../static/CSS/Inicio.css">
     <!-- FONT titulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,8 +10,9 @@
     <!-- FONT texto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">   
+{% endblock %}
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
@@ -60,7 +59,7 @@
         </p>
     </div>
 
-    <!-- lenguajes -->
+    <!-- lenguajes y jinja2 para mostar las skills--> 
     <section class="skills">
         <h2>Lenguajes y Tecnologías</h2>
         <div class="skills-cards">

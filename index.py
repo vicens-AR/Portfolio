@@ -85,6 +85,7 @@ def logout():
 # Página principal
 @app.route('/')
 def principal():
+    #POO
     skills_list = [
         Skill(name="HTML", image_url="https://cdn-icons-png.flaticon.com/128/732/732212.png"),
         Skill(name="CSS", image_url="https://cdn-icons-png.flaticon.com/128/732/732190.png"),

@@ -1,7 +1,7 @@
 body {
     background-image: url('../Banner.png');
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-size: cover; /* Asegúrate de que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; 
+    background-size: cover; 
     background-attachment: fixed; /* Hace que la imagen sea estática */
     background-position: center; /* Centra la imagen */
     margin: 0;
@@ -9,12 +9,13 @@ body {
 }
 
 .navbar {
-    background-color: #f8f9fa; /* Color de fondo de la navbar */
+    background-color: #f8f9fa; 
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid #e0e0e0;
+    width: 108%;
 }
 
 .menu a {
@@ -34,7 +35,7 @@ body {
 /* Banner estilo */
 .banner {
     position: relative;
-    width: 100%;
+    width: 111%;
     height: 300px;
     background-color: rgba(255, 0, 0, 0.655);
     padding: 0;
